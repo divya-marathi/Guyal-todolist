@@ -39,7 +39,7 @@ export default function Signup() {
   // Handling the form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await axios.post("http://localhost:5000/register", {
+    let response = await axios.post("https://guyal-todo.onrender.com/register", {
       email: user.email,
       password: user.password,
       name: user.name,

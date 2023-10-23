@@ -20,7 +20,7 @@ function Login() {
   const handleSubmit = async (event) => {
     //Prevent page reload
     event.preventDefault();
-    let response = await axios.post("http://localhost:5000/login", {
+    let response = await axios.post("https://guyal-todo.onrender.com/login", {
       email: user.email,
       password: user.password,
     });
